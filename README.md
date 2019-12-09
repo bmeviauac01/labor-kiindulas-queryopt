@@ -1,6 +1,6 @@
 # Lekérdezés optimalizálás labor
 
-## Index nélküli lekérdezések
+## Feladat 1
 
 A kiadott parancsok:
 
