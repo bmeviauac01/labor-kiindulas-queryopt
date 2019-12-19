@@ -16,3 +16,4 @@ jobs:
 
       - name: Check neptun.txt
         uses: akosdudas/ahk-action-neptuncheck@master
+        if: github.event.before != '0000000000000000000000000000000000000000'
