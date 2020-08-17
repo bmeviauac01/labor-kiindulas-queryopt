@@ -2,13 +2,15 @@ name: Evaluation
 
 on:
   pull_request:
-    types: [opened, synchronize, labeled]
+    types: [opened, synchronize, ready_for_review, labeled]
 
 jobs:
   evaluate:
     runs-on: ubuntu-latest
 
     timeout-minutes: 1
+
+    if: github.event.pull_request.draft == false
 
     steps:
       - name: Checkout
