@@ -18,6 +18,12 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Check neptun.txt
+        uses: akosdudas/ahk-action-neptuncheck@v1
+
+      - name: Check README and image files
+        uses: akosdudas/ahk-action-check-readme-images@v1
+
       - name: Add neptun code to PR
         uses: docker://ghcr.io/akosdudas/ahk-publish-results-pr:v1
         with:
